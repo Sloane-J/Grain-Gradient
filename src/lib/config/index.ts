@@ -5,7 +5,7 @@ export const SITE = {
   description: "A news website built with Astro",
   author: "Samuel Dorkey",
   url: "https://grainandgradient.vercel.app",
-  github: "https://github.com/Sloane-J/astro-news-site",
+  github: "https://github.com/Sloane-J/Grain-Gradient",
   locale: "en-US",
   dir: "ltr",
   charset: "UTF-8",

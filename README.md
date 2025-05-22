@@ -11,7 +11,7 @@ A news website built with Astro, designed to provide a modern and responsive new
 
 ## 🌐 Demo
 
-Explore the live demo here: [**Live Demo**](https://astro-news-six.vercel.app/)
+Explore the live demo here: [**Live Demo**](https://https://grainandgradient.vercel.app/)
 
 ## 🚀 Installation
 
@@ -20,7 +20,7 @@ Follow the steps below to set up and run the project locally:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Mrahmani71/astro-news.git
+git clone https://github.com/Sloane-J/Grain-Gradient.git
 ```
 
 ### Install Dependencies
@@ -104,4 +104,4 @@ Open sourced under the [MIT license](LICENSE).
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Mrahmani71/astro-news/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Sloane-J/astro-news/issues).
