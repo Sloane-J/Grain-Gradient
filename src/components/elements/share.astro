@@ -1,0 +1,58 @@
+---
+import ShareItem from "@/components/bases/share-item.astro";
+import ScriptShare from "@/components/bases/script.astro";
+type Props = {
+  text: string;
+};
+const { pathname } = Astro.url;
+const { text } = Astro.props;
+---
+
+<>
+  <div class="flex gap-4">
+    <ShareItem
+      className="hover:bg-primary hover:text-primary-content"
+      title="Copy Link"
+      dataAwSocialShare="clipboard"
+      dataAwUrl={`${import.meta.env.SITE + pathname}`}
+      dataAwText={text}
+      icon="clipboard"
+    />
+    <ShareItem
+      className="hover:bg-[#3b5998]  hover:text-primary-content"
+      title="Facebook Share"
+      dataAwSocialShare="facebook"
+      dataAwUrl={`${import.meta.env.SITE + pathname}`}
+      dataAwText={text}
+      icon="facebook"
+    />
+
+    <ShareItem
+      className="hover:bg-[#00acee]  hover:text-primary-content"
+      title="Twitter Share"
+      dataAwSocialShare="twitter"
+      dataAwUrl={`${import.meta.env.SITE + pathname}`}
+      dataAwText={text}
+      icon="twitter"
+    />
+
+    <ShareItem
+      className="hover:bg-[#0072b1]  hover:text-primary-content"
+      title="LinkedIn Share"
+      dataAwSocialShare="linkedin"
+      dataAwUrl={`${import.meta.env.SITE + pathname}`}
+      dataAwText={text}
+      icon="linkedin"
+    />
+
+    <ShareItem
+      className="hover:bg-[#008000]  hover:text-primary-content"
+      title="WhatsApp Share"
+      dataAwSocialShare="whatsapp"
+      dataAwUrl={`${import.meta.env.SITE + pathname}`}
+      dataAwText={text}
+      icon="whatsapp"
+    />
+  </div>
+  <ScriptShare />
+</>
