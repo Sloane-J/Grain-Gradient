@@ -14,7 +14,11 @@ import vercel from "@astrojs/vercel";
 
 const { RUN_KEYSTATIC } = loadEnv(import.meta.env.MODE, process.cwd(), "");
 
-const integrations = [mdx(), sitemap(), pagefind()];
+const integrations = [mdx(), sitemap({
+  changefreq: 'weekly',
+  priority: 0.7,
+  lastmod: new Date('2025-06-12'),
+}), pagefind()];
 
 if (RUN_KEYSTATIC === "true") {
   integrations.push(react());
@@ -23,7 +27,7 @@ if (RUN_KEYSTATIC === "true") {
 
 // https://astro.build/config
 export default defineConfig({
-  site: SITE.url,
+  site: 'http://grainandgradient.vercel.app/',
   base: SITE.basePath,
 
   markdown: {
