@@ -3,7 +3,12 @@ import { config } from "@keystatic/core";
 
 export default config({
   storage: {
-    kind: "local",
+    kind: "github", // <-- Changed from "local" to "github"
+    repo: {
+      owner: 'Sloane-J', // <-- Your GitHub username
+      name: 'Grain-Gradient',       // <-- Your repository name
+      //branch: 'main',               // <-- The branch Vercel deploys from (usually 'main')
+    },
   },
   ui: {
     brand: {
